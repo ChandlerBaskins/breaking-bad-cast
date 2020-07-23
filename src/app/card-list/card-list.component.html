@@ -1,0 +1,6 @@
+<h1 *ngIf="isLoading">Loading</h1>
+<ng-container *ngIf="!isLoading">
+  <div class="cards">
+    <app-card [character]="character" *ngFor="let character of characters"></app-card>
+  </div>
+</ng-container>
